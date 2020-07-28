@@ -1,0 +1,95 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 90vh;
+	font-family: fantasy;
+	background-image: url('biloca.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 20rem;
+	margin: 0 auto;
+	text-align: center;
+	gap: 2rem;
+	padding: 2rem;
+	background-color: rgba(70, 131, 180, 0.644);
+	border-radius: 0.5rem;
+	color: white;
+}
+
+.header {
+	font-weight: 900;
+	font-size: 1.5rem;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 8rem;
+	background-color: rgba(0, 0, 0, 0.377);
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 8rem;
+}
+
+.btn {
+	margin: 0 auto;
+	width: 5rem;
+}
+
+input {
+	border: none;
+}
+
+input[type='text'] {
+	background-color: rgba(245, 245, 245, 0.795);
+	/* color: whitesmoke; */
+}
+.form-item-nick > input {
+	padding: 0.2rem;
+}
+
+.form-item-color > input {
+	border: 0.13rem solid black;
+	border-radius: 0.2rem;
+	width: 2rem;
+}
+
+.btn {
+	height: 2rem;
+	margin-top: 0.5rem;
+	border: 2px solid black;
+	border-radius: 0.13rem;
+	transition-duration: 300ms;
+	background-color: steelblue;
+	color: white;
+	font-weight: 900;
+}
+
+.btn:hover {
+	cursor: pointer;
+	filter: brightness(1.1);
+}

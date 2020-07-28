@@ -1,0 +1,111 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	/* background-color: lightsteelblue; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 90vh;
+	font-family: fantasy;
+	background-image: url('biloca2.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+@media only screen and (max-width: 700px) {
+	body {
+		flex-direction: column;
+		justify-content: start;
+		margin-top: 5rem;
+	}
+}
+
+#screen {
+	border: 10px solid #ccc;
+	border-radius: 0.13rem;
+	image-rendering: pixelated;
+	image-rendering: crisp-edges;
+	image-rendering: -moz-crisp-edges;
+	width: 400px;
+	height: 400px;
+	margin: 0.5rem;
+	background-color: rgba(245, 245, 245, 0.733);
+}
+
+.players-container {
+	height: 400px;
+	overflow: auto;
+	scrollbar-width: thin;
+	width: 14rem;
+	padding-left: 1rem;
+	background-color: rgba(245, 245, 245, 0.733);
+	border-radius: 0.13rem;
+}
+
+.players-list,
+.btn-players {
+	width: 12rem;
+	overflow: hidden;
+}
+
+.btn-players {
+	height: 2rem;
+	margin-top: 0.5rem;
+	border-top: 4px solid black;
+	border-bottom: 4px solid black;
+	border-left: none;
+	border-right: none;
+	border-radius: 0.13rem;
+	transition-duration: 300ms;
+	background-color: steelblue;
+	color: white;
+	font-weight: 900;
+}
+
+.btn-players:hover {
+	cursor: pointer;
+	filter: brightness(1.1);
+}
+
+.players-list {
+	/* background-color: rgba(0, 0, 0, 0.356); */
+}
+
+.hide {
+	display: none;
+}
+
+.player-item {
+	color: whitesmoke;
+	/* background-color: teal; */
+	border-radius: 0.13rem;
+	margin-top: 0.1rem;
+	border: 2px solid black;
+}
+
+.player-color-box {
+	padding: 0.3rem 0.3rem 0.3rem 1.65rem;
+}
+
+.player-nickname {
+	padding: 0.1rem;
+	border-radius: 0.13rem;
+	background-color: black;
+}
+
+.btn-players:after {
+	content: '\002B';
+	color: white;
+	font-weight: bold;
+	float: right;
+	padding-right: 0.5rem;
+}
+
+.active:after {
+	content: '\2212';
+}
